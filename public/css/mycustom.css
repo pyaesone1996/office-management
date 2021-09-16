@@ -1,0 +1,70 @@
+span.odd_number{
+    background: none;
+    border: 1px solid red;
+    padding: 0px 14px;
+    border-radius: 50%;
+    font-size: 26px;
+    position: absolute;
+    left: -20px;
+    top: -30px;
+}
+span.event_number{
+    background: none;
+    border: 1px solid red;
+    padding: 0px 14px;
+    border-radius: 50%;
+    font-size: 26px;
+    position: absolute;
+    right: -25px;
+    top: -50px;
+}
+
+card-body img{
+    position: relative;
+}
+.profiletimeline .sl-left img, .steamline .sl-left img {
+    max-width: 80px!important;
+    transform: translate(-20px, 10px)!important;
+}
+.navbar-light .navbar-nav .nav-link{
+     color: #fff !important;
+     ;
+}
+
+ .nav-link {
+    display: block;
+    padding: 2px 1rem;
+}
+  header nav .active {
+    color: #fff !important;
+    border: 1px solid #fff;
+    border-radius: 5%;
+    padding: 2px 12px !important;
+    display: inline-block;
+    opacity: 0.8
+}
+header nav.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm.navbar.sticky-top {
+    z-index: 1500;
+}
+.aboutauthor-profile{
+    position: absolute;
+    top: -70px;
+    right: 70px;
+    z-index: 1;
+    width: 120px;
+}
+.author-content {
+    position: relative;
+    margin-top: 100px;
+}
+.app-search {
+  line-height: 60px; }
+.app-search .form-control {
+    border-radius: 60px;
+    transition: 0.2s ease-out;
+    width: 160px; 
+    border:1px solid #ddd}
+
+.app-search .form-control:focus {
+      width: 250px; }
+
