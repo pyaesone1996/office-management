@@ -68,12 +68,11 @@ class RegisterController extends Controller
         $role = Role::where('id', request('role_id'))->get();
         $user = User::create([
             'name' => $data['name'],
-            'username' => $data['username'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
 
-        $user->roles()->attach($role);
+        $user->role()->attach($role);
 
         return $user;
     }
