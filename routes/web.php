@@ -16,10 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', 'ShowController@companies');
-Route::get('/employees', 'ShowController@employees');
-Route::get('/employee/export', 'ShowController@employeeExport');
-
+Route::get('/admin', 'AdminController@dashboard');
 Route::prefix('admin')->group(function () {
     Route::get('/', 'AdminController@dashboard');
 
@@ -47,5 +44,7 @@ Route::prefix('admin')->group(function () {
     Route::get('/department/delete/{id}', 'AdminController@deleteDepartment')->name('admin-delete-department');
 });
 
+Route::get('/', 'ShowController@companies');
+Route::get('/employees', 'ShowController@employees');
+Route::get('/employee/export', 'ShowController@employeeExport');
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');

@@ -94,6 +94,9 @@
                                         <input type="email" id="email" name="email"
                                             class="form-control @error('email') border-danger @enderror">
                                     </div>
+                                    @error('email')
+                                        <p class="text-danger"><small>{{ $message }}</small></p>
+                                    @enderror
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -108,6 +111,9 @@
                                         <input type="text" id="address" name="address"
                                             class="form-control @error('address') border-danger @enderror">
                                     </div>
+                                    @error('address')
+                                        <p class="text-danger"><small>{{ $message }}</small></p>
+                                    @enderror
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">

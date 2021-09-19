@@ -44,7 +44,7 @@ class AdminController extends Controller
         request()->validate([
             'firstname' => 'required',
             'lastname' => 'required',
-            'email' => 'required',
+            'email' => ['required', 'unique:employees'],
             'phone' => 'required',
             'staff_id' => ['required', 'unique:employees'],
         ]);

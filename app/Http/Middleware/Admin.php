@@ -21,7 +21,7 @@ class Admin
             if ($current_user == 'Admin') {
                 return $next($request);
             } else {
-                return redirect('/');
+                return redirect('/admin');
             }
         } else {
             return route('login');

@@ -29,7 +29,8 @@ class LoginController extends Controller
     protected function redirectTo()
     {
         if (auth()->user()->role->pluck('name')->contains('Admin')) {
-            return '/admin';
+
+            return redirect('/admin');
         }
     }
 }
