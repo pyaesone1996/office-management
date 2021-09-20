@@ -1,6 +1,6 @@
 ## Feature
 
--   Admin Can do CRUD 
+-   Admin only can do CRUD 
 -   Employee  can see data list who have login account 
 
 ## Todo
