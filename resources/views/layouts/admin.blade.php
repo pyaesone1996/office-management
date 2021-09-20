@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('admin/assets/images/favicon.png') }}">
     <title>Office Management</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('admin/dist/css/style.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/dist/css/style.css') }}" rel="stylesheet">
     @yield('style')
 </head>
 

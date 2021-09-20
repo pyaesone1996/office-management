@@ -68,3 +68,7 @@ header nav.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm.navbar.sticky
 .app-search .form-control:focus {
       width: 250px; }
 
+.alert {
+    margin-bottom: 0rem!important;
+}
+

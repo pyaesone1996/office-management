@@ -11,7 +11,7 @@
 @endsection
 
 @section('admin')
-
+    @include('admin.alert-message')
     <div class="container-fluid">
         <div class="row page-titles">
             <div class="col-md-5 align-self-center">
@@ -76,7 +76,8 @@
                                         <td>
                                             <a href="" class="btn btn-primary px-4 btn-sm my-1" data-toggle="modal"
                                                 data-target="#verticalcenter{{ $employee->id }}">Edit</a>
-                                            <a href="" class="btn btn-danger px-3 btn-sm">Delete</a>
+                                            <a href="{{ route('admin-emplyoee-delete', $employee->id) }}"
+                                                class="btn btn-danger px-3 btn-sm">Delete</a>
                                         </td>
                                     </tr>
                                     <div id="verticalcenter{{ $employee->id }}" class="modal" tabindex="-1"

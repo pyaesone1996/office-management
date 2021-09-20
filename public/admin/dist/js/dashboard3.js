@@ -41,7 +41,7 @@ $(function () {
 
 
                 ],
-                lineColors: ['#fb9678', '#01c0c8', '#8698b7'],
+                lineColors: ['#03a9f3', '#01c0c8', '#8698b7'],
                 xkey: 'period',
                 ykeys: ['iphone', 'ipad', 'itouch'],
                 labels: ['Site A', 'Site B', 'Site C'],

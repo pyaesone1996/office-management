@@ -87,7 +87,7 @@ class AdminController extends Controller
         $emplyoee = Employee::find($id);
         $emplyoee->delete();
 
-        return back()->with('delete', 'Your Data Is Updated!');
+        return back()->with('delete', 'Your Data Is Deleted!');
     }
 
     public function listEmployee()
@@ -155,14 +155,14 @@ class AdminController extends Controller
             $role = Role::where('id', request('role_id'))->get();
             $user->roles()->attach($role);
         }
-        return back()->with('update', 'Your Data Is Added!');
+        return back()->with('update', 'Your Data Is Updated!');
     }
     public function deleteAccount($id)
     {
         $user =  User::findorFail($id);
         $user->delete();
 
-        return back()->with('delete', 'Your Data Is Added!');
+        return back()->with('delete', 'Your Data Is Deleted!');
     }
 
     public function createDepartment(Request $request)
@@ -231,13 +231,13 @@ class AdminController extends Controller
             $company->departments()->sync(request('departments'));
         }
 
-        return back()->with('update', 'Your Data Is Added!');
+        return back()->with('update', 'Your Data Is Updated!');
     }
     public function deleteCompany($id)
     {
         $company = Company::findorFail($id);
         $company->delete();
 
-        return back()->with('delete', 'Your Data Is Added!');
+        return back()->with('delete', 'Your Data Is Deleted!');
     }
 }
